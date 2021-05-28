@@ -4,6 +4,7 @@ body {
     */
     &.is-grey {
         background-color: $Mercury;
+        transition-duration: 1s;
 
         .cursor-theme {
             background-color: $Swiss-Coffee;
@@ -54,6 +55,7 @@ body {
     */  
     &.is-dark {
         background-color: $Blackcurrant-mBg;
+        transition-duration: 1s;
 
         .cursor-theme {
             background-color: $Blackcurrant-tBg;

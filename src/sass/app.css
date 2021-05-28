@@ -127,6 +127,8 @@ body {
 
 body.is-grey {
   background-color: #E6E6E6;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 body.is-grey .cursor-theme {
@@ -176,6 +178,8 @@ body.is-grey .keys__equal {
 
 body.is-dark {
   background-color: #0D0516;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 body.is-dark .cursor-theme {
