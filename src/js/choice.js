@@ -5,6 +5,7 @@ const CHOICETHREE = document.querySelector('#choiceThree')
 CHOICEONE.addEventListener('click', ()=> {
     document.body.classList.remove('is-grey')
     document.body.classList.remove('is-dark')
+    document.body.style.transitionDuration = '1s'
 } , false)
 
 
