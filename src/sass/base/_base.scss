@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    background-color: $Fiord;
+}
+
+h1 {
+    font-family: $spartan_mbbold;
+    font-size: 1.25rem;
+    color: $White;
+}
+
+p {
+    font-family: $spartan_mbbold;
+    color: $White;
+}
+
+button {
+    font-family: $spartan_mbbold;
+    font-size: 1.25rem;
+}

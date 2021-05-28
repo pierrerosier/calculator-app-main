@@ -1,0 +1,44 @@
+.cursor-theme {
+    width: 100%;
+    height: 1.875rem;
+    border: none;
+    border-radius: .9375rem;
+    background-color: $Ebony-Clay;
+}
+
+.cursor-theme::before {
+    content: '';
+    position: absolute;
+    top: calc(0% + (1.5rem / 4));
+    left: calc(0% + (1.5rem / 2));
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: $Persian-Red;
+}
+
+.keys {
+    width: 100%;
+    height: 3rem;
+    background-color: $Pearl-Bush;
+    border: 0;
+    border-radius: .5rem;
+    box-shadow: 0 .125rem $Napa ;
+    color: $River-Bed;
+
+    &__del {
+        background-color: $Lynch;
+        box-shadow: 0 .125rem $East-Bay ;
+        color: $White;
+    }
+
+    &__equal {
+        background-color: $Persian-Red;
+        box-shadow: 0 .125rem $Old-Brick ;
+        color: $White;
+    }
+
+    /*@media screen and(min-width: 992px) {
+        width: 75%;
+    }*/
+}

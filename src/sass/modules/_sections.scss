@@ -1,0 +1,30 @@
+/*
+*Calculator theme
+*/
+.calculator {
+
+    &__theme {
+        margin-top: 1.6875rem!important;
+    }
+
+    &__display {
+        padding-right: calc(var(--bs-gutter-x)/ 2);
+        padding-left: calc(var(--bs-gutter-x)/ 2);
+    }
+
+    &__keys {
+        padding: 1rem;
+        border-radius: .5rem;
+        background-color: $Ebony-Clay;
+    }
+}
+
+/*
+*Calculator display
+*/
+.display {
+    display: table!important;
+    height: 6.4375rem;
+    border-radius: .5rem;
+    background-color: $Blackcurrant-tBg;
+}

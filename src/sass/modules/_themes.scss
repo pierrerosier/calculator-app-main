@@ -1,0 +1,101 @@
+body {
+    /*
+    *Thème 2
+    */
+    &.is-grey {
+        background-color: $Mercury;
+
+        .cursor-theme {
+            background-color: $Swiss-Coffee;
+        }
+
+        .cursor-theme::before {
+            left: calc(50% - (1.5rem / 2));
+        }
+
+        h1, p {
+            color: $Armadillo;
+        }
+        
+        .display {
+            background-color: $Gallery;
+        }
+
+        .calc-display {
+            color: $Armadillo;
+        }
+
+        .calculator__keys {
+            background-color: $Swiss-Coffee;
+        }
+
+
+        .keys {
+            background-color: $Westar;
+            box-shadow: 0 .125rem $Zorba ;
+            color: $Armadillo;
+        
+            &__del {
+                background-color: $Paradiso;
+                box-shadow: 0 .125rem $Blumine ;
+                color: $White;
+            }
+        
+            &__equal {
+                background-color: $Burnt-Orange;
+                box-shadow: 0 .125rem $Peru-Tan ;
+                color: $White;
+            }
+        }
+    }
+
+    /*
+    *Thème 3
+    */  
+    &.is-dark {
+        background-color: $Blackcurrant-mBg;
+
+        .cursor-theme {
+            background-color: $Blackcurrant-tBg;
+        }
+    
+        .cursor-theme::before {
+            left: calc(100% - (1.5rem + (1.5rem / 2)));
+        }
+    
+        h1, p {
+            color: $Bright-Sun;
+        }
+    
+        .display {
+            background-color: $Blackcurrant-tBg;
+        }
+
+        .calc-display {
+            color: $Bright-Sun;
+        }
+    
+        .calculator__keys {
+            background-color: $Blackcurrant-tBg;
+        }
+
+        .keys {
+            background-color:  $Persian-Indigo;
+            box-shadow: 0 .125rem $Indigo ;
+            color: $Bright-Sun;
+        
+            &__del {
+                background-color: $Tolopea;
+                box-shadow: 0 .125rem $Christalle ;
+                color: $White;
+            }
+        
+            &__equal {
+                background-color: $Iris-Blue;
+                box-shadow: 0 .125rem $Tropical-Rain-Forest ;
+                color: $Shark;
+            }
+        }
+        
+    }
+}

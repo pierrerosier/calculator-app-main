@@ -1,0 +1,315 @@
+@charset "UTF-8";
+/* Theme Name: calculator-app-main
+ * Author: Pierre Rosier
+ * Description: Thème créé pour un exercice Frontend Mentor
+ * Version: 1.0.0
+ */
+/*
+*Fonts
+*/
+/*
+*Colors
+*/
+/*
+    **Thème 1
+    */
+/*
+        ***Backgrounds
+        */
+/* main background */
+/* toggle background, keypad background */
+/*  screen background */
+/*
+        ***Keys
+        */
+/* key background */
+/* key shadow */
+/* key background, toggle */
+/* key shadow */
+/* key background */
+/* key shadow */
+/*
+        ***Text
+        */
+/*
+    **Thème 2
+    */
+/*
+        ***Backgrounds
+        */
+/* main background */
+/* toggle background, keypad background */
+/*  screen background */
+/*
+        ***Keys
+        */
+/* key background */
+/* key shadow */
+/* key background, toggle */
+/* key shadow */
+/* key background */
+/* key shadow */
+/*
+        ***Text
+        */
+/*
+    **Thème 3
+    */
+/*
+        ***Backgrounds
+        */
+/* main background */
+/* toggle background, keypad background, screen background */
+/*
+        ***Keys
+        */
+/* key background */
+/* key shadow */
+/* key background, toggle */
+/* key shadow */
+/* key background */
+/* key shadow */
+/*
+        ***Text
+        */
+/*
+*Spacers
+*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  background-color: #3A4764;
+}
+
+h1 {
+  font-family: "spartan_mbbold", sans-serif;
+  font-size: 1.25rem;
+  color: #FFFFFF;
+}
+
+p {
+  font-family: "spartan_mbbold", sans-serif;
+  color: #FFFFFF;
+}
+
+button {
+  font-family: "spartan_mbbold", sans-serif;
+  font-size: 1.25rem;
+}
+
+/*
+*Spartan
+*/
+/*
+**Bold
+*/
+@font-face {
+  font-family: 'spartan_mbbold';
+  src: url("../fonts/spartanmb-bold-webfont.woff2") format("woff2"), url("../fonts/spartanmb-bold-webfont.woff") format("woff"), url("../fonts/spartanmb-bold-webfont.ttf") format("truetype"), url("../fonts/spartanmb-bold-webfont.svg#spartan_mbbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  /*
+    *Thème 2
+    */
+  /*
+    *Thème 3
+    */
+}
+
+body.is-grey {
+  background-color: #E6E6E6;
+}
+
+body.is-grey .cursor-theme {
+  background-color: #D1CCCC;
+}
+
+body.is-grey .cursor-theme::before {
+  left: calc(50% - (1.5rem / 2));
+}
+
+body.is-grey h1, body.is-grey p {
+  color: #35352C;
+}
+
+body.is-grey .display {
+  background-color: #EDEDED;
+}
+
+body.is-grey .calc-display {
+  color: #35352C;
+}
+
+body.is-grey .calculator__keys {
+  background-color: #D1CCCC;
+}
+
+body.is-grey .keys {
+  background-color: #E5E4E1;
+  -webkit-box-shadow: 0 0.125rem #A69D91;
+          box-shadow: 0 0.125rem #A69D91;
+  color: #35352C;
+}
+
+body.is-grey .keys__del {
+  background-color: #377F86;
+  -webkit-box-shadow: 0 0.125rem #1B5F65;
+          box-shadow: 0 0.125rem #1B5F65;
+  color: #FFFFFF;
+}
+
+body.is-grey .keys__equal {
+  background-color: #CA5502;
+  -webkit-box-shadow: 0 0.125rem #893901;
+          box-shadow: 0 0.125rem #893901;
+  color: #FFFFFF;
+}
+
+body.is-dark {
+  background-color: #0D0516;
+}
+
+body.is-dark .cursor-theme {
+  background-color: #13081E;
+}
+
+body.is-dark .cursor-theme::before {
+  left: calc(100% - (1.5rem + (1.5rem / 2)));
+}
+
+body.is-dark h1, body.is-dark p {
+  color: #FFE53D;
+}
+
+body.is-dark .display {
+  background-color: #13081E;
+}
+
+body.is-dark .calc-display {
+  color: #FFE53D;
+}
+
+body.is-dark .calculator__keys {
+  background-color: #13081E;
+}
+
+body.is-dark .keys {
+  background-color: #2F0742;
+  -webkit-box-shadow: 0 0.125rem #660B84;
+          box-shadow: 0 0.125rem #660B84;
+  color: #FFE53D;
+}
+
+body.is-dark .keys__del {
+  background-color: #281C35;
+  -webkit-box-shadow: 0 0.125rem #511B5B;
+          box-shadow: 0 0.125rem #511B5B;
+  color: #FFFFFF;
+}
+
+body.is-dark .keys__equal {
+  background-color: #0EB2AA;
+  -webkit-box-shadow: 0 0.125rem #007068;
+          box-shadow: 0 0.125rem #007068;
+  color: #1B2428;
+}
+
+/*
+*Calculator theme
+*/
+.calculator__theme {
+  margin-top: 1.6875rem !important;
+}
+
+.calculator__display {
+  padding-right: calc(var(--bs-gutter-x)/ 2);
+  padding-left: calc(var(--bs-gutter-x)/ 2);
+}
+
+.calculator__keys {
+  padding: 1rem;
+  border-radius: .5rem;
+  background-color: #232C43;
+}
+
+/*
+*Calculator display
+*/
+.display {
+  display: table !important;
+  height: 6.4375rem;
+  border-radius: .5rem;
+  background-color: #13081E;
+}
+
+.cursor-theme {
+  width: 100%;
+  height: 1.875rem;
+  border: none;
+  border-radius: .9375rem;
+  background-color: #232C43;
+}
+
+.cursor-theme::before {
+  content: '';
+  position: absolute;
+  top: calc(0% + (1.5rem / 4));
+  left: calc(0% + (1.5rem / 2));
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #D03F2F;
+}
+
+.keys {
+  width: 100%;
+  height: 3rem;
+  background-color: #EAE3DC;
+  border: 0;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 0.125rem #B4A597;
+          box-shadow: 0 0.125rem #B4A597;
+  color: #444B5A;
+  /*@media screen and(min-width: 992px) {
+        width: 75%;
+    }*/
+}
+
+.keys__del {
+  background-color: #637097;
+  -webkit-box-shadow: 0 0.125rem #404E72;
+          box-shadow: 0 0.125rem #404E72;
+  color: #FFFFFF;
+}
+
+.keys__equal {
+  background-color: #D03F2F;
+  -webkit-box-shadow: 0 0.125rem #93261A;
+          box-shadow: 0 0.125rem #93261A;
+  color: #FFFFFF;
+}
+
+.theme--choices {
+  font-size: .75rem;
+  cursor: pointer;
+}
+
+.calc-display {
+  /*display: table-cell!important;
+    vertical-align: middle;*/
+  width: 100%;
+  font-size: 4rem;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: none;
+}
+/*# sourceMappingURL=app.css.map */
