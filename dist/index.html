@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+
+    
+
+    <script type="module" crossorigin src="/assets/index.a7eccff3.js"></script>
+    <link rel="stylesheet" href="/assets/index.15399b6e.css">
+  </head>
+  <body>
+
+    <main class="container calculator">
+
+      <div class="row calculator__theme">
+        <div class="col-3 offset-9 col-lg-1 offset-lg-8 d-flex justify-content-around">
+          <p class="theme--choices mb-0" id="choiceOne">1</p>
+          <p class="theme--choices mb-0" id="choiceTwo">2</p>
+          <p class="theme--choices mb-0" id="choiceThree">3</p>
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-center mb-3">
+        <div class="col-1 offset-lg-3">
+          <h1 class="mb-0">calc</h1>
+        </div>
+        <div class="col-1 offset-6 offset-lg-3">
+          <p class="theme--choices mb-0">THEME</p>
+        </div>
+        <div class="col-3 offset-1 offset-lg-0 col-lg-1 position-relative">
+          <button class="cursor-theme"></button>
+        </div>
+      </div>
+
+      <div class="row calculator__display">
+        <div class="col offset-lg-3 col-lg-6 display">
+          <input type="text" class="calc-display text-end" id="output">
+        </div>
+      </div>
+
+      <div class="container calculator__keys offset-lg-3 col-lg-6 mt-3">
+
+        <div class="row text-center">
+          <div class="col-3">
+            <button class="keys" onclick="afficher('7')">7</button>
+          </div>
+          <div class="col-3">
+            <button class="keys" onclick="afficher('8')">8</button>
+          </div>
+          <div class="col-3">
+            <button class="keys" onclick="afficher('9')">9</button>
+          </div>
+          <div class="col-3">
+            <button class="keys keys__del">DEL</button>
+          </div>
+        </div>
+
+        <div class="row text-center mt-2">
+          <div class="col-3">
+            <button class="keys" onclick="afficher('4')">4</button>
+          </div>
+          <div class="col-3">
+            <button class="keys" onclick="afficher('5')">5</button>
+          </div>
+          <div class="col-3">
+            <button class="keys" onclick="afficher('6')">6</button>
+          </div>
+          <div class="col-3">
+            <button class="keys" onclick="afficher('+')">+</button>
+          </div>
+        </div>
+
+        <div class="row text-center mt-2">
+          <div class="col-3">
+            <button class="keys" onclick="afficher('1')">1</button>
+          </div>
+          <div class="col-3">
+            <button class="keys" onclick="afficher('2')">2</button>
+          </div>
+          <div class="col-3">
+            <button class="keys" onclick="afficher('3')">3</button>
+          </div>
+          <div class="col-3">
+            <button class="keys" onclick="afficher('-')">-</button>
+          </div>
+        </div>
+
+        <div class="row text-center mt-2">
+          <div class="col-3">
+            <button class="keys" onclick="afficher('.')">.</button>
+          </div>
+          <div class="col-3">
+            <button class="keys" onclick="afficher('0')">0</button>
+          </div>
+          <div class="col-3">
+            <button class="keys" onclick="afficher('/')">/</button>
+          </div>
+          <div class="col-3">
+            <button class="keys" onclick="afficher('*')">&times;</button>
+          </div>
+        </div>
+
+        <div class="row text-center mt-2">
+          <div class="col-6">
+            <button class="keys keys__del" onclick="effacer()">RESET</button>
+          </div>
+          <div class="col-6">
+            <button class="keys keys__equal" onclick="calculer()">=</button>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+  
+
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="www.pierrerosier.fr">Pierre Rosier</a>.
+    </div>
+    
+    
+  </body>
+</html>
